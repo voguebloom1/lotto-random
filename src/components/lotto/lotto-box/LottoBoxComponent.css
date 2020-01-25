@@ -1,0 +1,25 @@
+.lotto-box{
+    height: 60px;
+    display: flex;
+    margin: 20px;
+    border: 1px solid #aeaeae;
+    padding-left: 25px;
+}
+
+.lotto-box-number{
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    margin: 10px 15px;
+    text-align: center;
+    font-size: 31px;
+    border-radius: 50%;
+}
+
+.lotto-box-plus{
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    text-align: center;
+    font-size: 31px;
+}

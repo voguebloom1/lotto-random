@@ -6,7 +6,11 @@ class LottoRandomSideMenu extends Component {
     render(){
         return(
             <div className="lotto-random-sidemenu">
-                <NumberPlateComponent/>
+                <NumberPlateComponent
+                    selected={this.props.selected}
+                    handleChange={this.props.handleChange}
+                    handleButtonOnClick={this.props.handleButtonOnClick}
+                />
             </div>
         );
     }

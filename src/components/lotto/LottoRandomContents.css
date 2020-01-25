@@ -2,4 +2,5 @@
     width: 677px;
     height: 600px;
     border: 1px solid #aeaeae;
+    overflow: scroll;
 }
