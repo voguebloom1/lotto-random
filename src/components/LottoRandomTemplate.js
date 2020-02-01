@@ -44,15 +44,14 @@ class LottoRandomTemplate extends Component {
             return;
         }else{
             const lotto = this.selectLotto([], numbers);
-            lottoNumbers.push(lotto);
-            this.setState({lottoNumbers});   
+            this.setState({lottoNumbers : [lotto, ...lottoNumbers]});   
         }
     }
 
     selectLotto = (lottoNumber, numbers) => {
         if(lottoNumber.length === 7) {
-            const temp = lottoNumber.slice(0,6);
-            temp.sort();
+            let temp = lottoNumber.slice(0,6);
+            temp.sort((a,b)=>a-b);
             temp.push(lottoNumber[6]);
             return temp
         }
